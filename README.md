@@ -45,3 +45,6 @@ The main goal was to create a complete software system that connects to a relati
 
 📜 License
 This project is for educational purposes only.
+
+## Screenshot
+![Main View](main_view.jpg.jpeg)
