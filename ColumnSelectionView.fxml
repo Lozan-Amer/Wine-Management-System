@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.winejavasql.ColumnSelectionController"
+      alignment="CENTER" spacing="20">
+
+    <!-- כפתור SELECT -->
+    <Button fx:id="selectColumnButton" text="Select Column" />
+
+    <!-- רשימת בחירת עמודה -->
+    <ComboBox fx:id="columnDropdown" promptText="Choose a column" visible="false"/>
+
+    <!-- טבלת הנתונים -->
+    <ScrollPane fitToWidth="true" fitToHeight="true">
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn fx:id="dataColumn" text="Selected Data" />
+            </columns>
+        </TableView>
+    </ScrollPane>
+    <Button fx:id="backButton" text="Back" onAction="#goBack" styleClass="back-button"/>
+
+
+</VBox>

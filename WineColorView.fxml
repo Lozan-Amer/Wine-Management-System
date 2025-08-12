@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.winejavasql.WineColorController" spacing="15" alignment="CENTER">
+    <Label fx:id="whiteWineLabel" text="White Wines: 4898"/>
+    <Label fx:id="redWineLabel" text="Red Wines: 1599"/>
+    <Label fx:id="totalWineLabel" text="Total Wines: 6497"/>
+    <Button fx:id="backButton" text="Back"/>
+</VBox>

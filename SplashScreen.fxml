@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1"
+           fx:id="rootPane"
+           fx:controller="com.example.winejavasql.SplashScreenController">
+
+    <ImageView fx:id="backgroundImage" fitWidth="1920" fitHeight="1080" preserveRatio="false"/>
+
+    <VBox alignment="CENTER" spacing="20">
+        <Label text="WINE JAVA SQL PROJECT" fx:id="titleLabel"
+               style="-fx-font-size: 115px; -fx-text-fill: white; -fx-font-weight: bold;"/>
+        <Label text="BY LOZAN AMER  &amp;  FDL ABO SHAHEEN" fx:id="creditLabel" styleClass="splash-credit"
+               style="-fx-font-size: 50px; -fx-text-fill: white; -fx-font-weight: bold;"/>
+    </VBox>
+
+</StackPane>

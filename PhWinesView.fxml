@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Pos?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.winejavasql.PhWinesController" spacing="10" alignment="CENTER">
+
+    <Label text="Enter pH Value:"/>
+    <TextField fx:id="phInputField" promptText="Enter pH value"/>
+    <Button fx:id="filterButton" text="Filter"/>
+
+    <TableView fx:id="tableView" prefWidth="800" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="fixedAcidityColumn" text="Fixed Acidity"/>
+            <TableColumn fx:id="volatileAcidityColumn" text="Volatile Acidity"/>
+            <TableColumn fx:id="citricAcidColumn" text="Citric Acid"/>
+            <TableColumn fx:id="residualSugarColumn" text="Residual Sugar"/>
+            <TableColumn fx:id="chloridesColumn" text="Chlorides"/>
+            <TableColumn fx:id="freeSulfurDioxideColumn" text="Free Sulfur Dioxide"/>
+            <TableColumn fx:id="totalSulfurDioxideColumn" text="Total Sulfur Dioxide"/>
+            <TableColumn fx:id="densityColumn" text="Density"/>
+            <TableColumn fx:id="pHColumn" text="pH"/>
+            <TableColumn fx:id="sulphatesColumn" text="Sulphates"/>
+            <TableColumn fx:id="alcoholColumn" text="Alcohol"/>
+            <TableColumn fx:id="qualityColumn" text="Quality"/>
+            <TableColumn fx:id="colorColumn" text="Color"/>
+        </columns>
+    </TableView>
+
+    <Label fx:id="errorLabel" text="" style="-fx-text-fill: red;"/>
+    <Button fx:id="backButton" text="Back"/>
+
+</VBox>

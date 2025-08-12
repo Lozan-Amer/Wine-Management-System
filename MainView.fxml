@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.winejavasql.MainViewController"
+      alignment="CENTER" spacing="20">
+
+    <!-- כפתור ראשי לבד למעלה -->
+    <Button fx:id="showWineButton" text="Show Wine Data" onAction="#showWineTable" styleClass="main-button"/>
+
+    <!-- שורה ראשונה עם 3 כפתורים -->
+    <HBox alignment="CENTER" spacing="15">
+        <Button fx:id="columnOptionButton" text="Column Selection" onAction="#openColumnSelection" styleClass="button"/>
+        <Button fx:id="colorSelectionButton" text="Wine Color Statistics" onAction="#openColorSelection" styleClass="button"/>
+        <Button fx:id="phFilterButton" text="pH Filtered Wines" onAction="#openPhFilter" styleClass="button"/>
+        <Button fx:id="columnStatsButton" text="Column Statistics" onAction="#openColumnStatistics" styleClass="button"/>
+    </HBox>
+
+    <!-- שורה שנייה עם 3 כפתורים -->
+    <HBox alignment="CENTER" spacing="15">
+        <Button fx:id="filterByDateButton" text="Filter by Date" onAction="#openFilterByDate" styleClass="button"/>
+        <Button fx:id="multiThreadingButton" text="Start MultiThreading" onAction="#startMultiThreading" styleClass="button"/>
+        <Button fx:id="sqlTablesButton" text="Show SQL Tables" onAction="#openSQLTablesView" styleClass="button"/>
+    </HBox>
+
+    <!-- תצוגת הטבלה -->
+    <ScrollPane fx:id="tableContainer" fitToWidth="true" fitToHeight="true" visible="false">
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn fx:id="fixedAcidityColumn" text="Fixed Acidity"/>
+                <TableColumn fx:id="volatileAcidityColumn" text="Volatile Acidity"/>
+                <TableColumn fx:id="citricAcidColumn" text="Citric Acid"/>
+                <TableColumn fx:id="residualSugarColumn" text="Residual Sugar"/>
+                <TableColumn fx:id="chloridesColumn" text="Chlorides"/>
+                <TableColumn fx:id="freeSulfurDioxideColumn" text="Free SO2"/>
+                <TableColumn fx:id="totalSulfurDioxideColumn" text="Total SO2"/>
+                <TableColumn fx:id="densityColumn" text="Density"/>
+                <TableColumn fx:id="pHColumn" text="pH"/>
+                <TableColumn fx:id="sulphatesColumn" text="Sulphates"/>
+                <TableColumn fx:id="alcoholColumn" text="Alcohol"/>
+                <TableColumn fx:id="qualityColumn" text="Quality"/>
+                <TableColumn fx:id="colorColumn" text="Color"/>
+            </columns>
+        </TableView>
+    </ScrollPane>
+
+    <!-- כפתור חזרה -->
+    <Button fx:id="backButton" text="Back" onAction="#hideWineTable" visible="false" styleClass="button"/>
+
+</VBox>

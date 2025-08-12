@@ -1,0 +1,169 @@
+/*  עיצוב למסך הפתיחה */
+.splash-root {
+    -fx-background-image: url("/style/fadeinbackground.jpeg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+/*  עיצוב למסך הראשי */
+.root {
+    -fx-background-image: url("../style/winebackground.jpeg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+/*  כפתור ראשי גדול יותר */
+.main-button {
+    -fx-background-color: linear-gradient(to bottom, #d4af37, #b8860b);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 14px 28px;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-color: #8b6508;
+    -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 0.8), 20, 0.6, 0, 0);
+    -fx-transition: all 0.4s ease-in-out;
+}
+
+/*  כפתורים קטנים */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #b8860b, #8b6508);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #6b4f09;
+    -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 0.6), 15, 0.5, 0, 0);
+    -fx-transition: all 0.4s ease-in-out;
+}
+
+/*  אפקט זוהר בעת מעבר עכבר */
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffd700, #d4af37);
+    -fx-effect: dropshadow(gaussian, rgba(255, 223, 0, 1), 25, 0.8, 0, 0);
+    -fx-cursor: hand;
+}
+
+/*  אנימציה לזוהר */
+@keyframes glow {
+    0% { -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 0.6), 15, 0.5, 0, 0); }
+    50% { -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 1), 20, 0.7, 0, 0); }
+    100% { -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 0.6), 15, 0.5, 0, 0); }
+}
+
+/*  הפעלת האנימציה לכפתורים */
+.button {
+    -fx-animation: glow 2s infinite alternate;
+}
+
+/*  עיצוב הטקסט במסך הפתיחה */
+.splash-title {
+    -fx-font-size: 100px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 15, 0, 0, 5);
+}
+
+.splash-credit {
+    -fx-font-size: 40px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 15, 0, 0, 5);
+}
+
+/*  עיצוב לקונטיינר */
+.column-selection-container {
+    -fx-alignment: center;
+    -fx-padding: 20px;
+}
+
+/*  כפתור ה- SELECT */
+.select-button {
+    -fx-background-color: linear-gradient(to bottom, #d4af37, #b8860b);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #6b4f09;
+    -fx-cursor: hand;
+}
+
+/*  רשימה נפתחת */
+.combo-box {
+    -fx-pref-width: 250px;
+    -fx-font-size: 16px;
+    -fx-padding: 5px;
+    -fx-background-color: white;
+    -fx-border-color: #8b6508;
+    -fx-border-radius: 5px;
+}
+
+/*  טבלה */
+.centered-table {
+    -fx-alignment: center;
+    -fx-pref-width: 400px;
+    -fx-font-size: 16px;
+}
+
+
+
+
+/*  כפתור ראשי SELECT */
+.select-button {
+    -fx-font-size: 18px;
+    -fx-padding: 10px 20px;
+    -fx-background-color: linear-gradient(to bottom, #FFD700, #DAA520); /* זהב מדורג */
+    -fx-text-fill: white;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #B8860B;
+    -fx-border-width: 2px;
+    -fx-font-weight: bold;
+}
+
+/*  כפתור SELECT בעת מעבר עכבר */
+.select-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #FFEC8B, #FFD700); /* גוון זהוב בהיר יותר */
+    -fx-effect: dropshadow(gaussian, rgba(255, 223, 0, 0.8), 15, 0.7, 0, 0);
+}
+
+/*  תפריט הבחירה (ComboBox) */
+.combo-box {
+    -fx-font-size: 16px;
+    -fx-padding: 5px;
+    -fx-background-color: #FFF8DC; /* רקע בהיר מוזהב */
+    -fx-border-color: #DAA520;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+/*  תפריט הבחירה בעת מעבר עכבר */
+.combo-box:hover {
+    -fx-background-color: #FFECB3; /* גוון זהוב בהיר יותר */
+}
+
+/*  כפתור חזרה */
+.back-button {
+    -fx-font-size: 16px;
+    -fx-padding: 8px 16px;
+    -fx-background-color: linear-gradient(to bottom, #FFD700, #DAA520);
+    -fx-text-fill: white;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #B8860B;
+    -fx-border-width: 2px;
+    -fx-font-weight: bold;
+}
+
+/*  כפתור חזרה בעת מעבר עכבר */
+.back-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #FFEC8B, #FFD700);
+    -fx-effect: dropshadow(gaussian, rgba(255, 223, 0, 0.8), 15, 0.7, 0, 0);
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.winejavasql.SQLTablesViewController" spacing="10" alignment="CENTER">
+
+    <!-- כותרת לחלון -->
+    <Label text="SQL Tables - Low Alcohol &amp; Neutral Quality Wines" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <!-- תצוגת טבלה ליינות עם אלכוהול נמוך -->
+    <Label text="Low Alcohol Wines" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+    <TableView fx:id="lowAlcoholTable">
+        <columns>
+            <TableColumn fx:id="laFixedAcidityColumn" text="Fixed Acidity"/>
+            <TableColumn fx:id="laVolatileAcidityColumn" text="Volatile Acidity"/>
+            <TableColumn fx:id="laCitricAcidColumn" text="Citric Acid"/>
+            <TableColumn fx:id="laResidualSugarColumn" text="Residual Sugar"/>
+            <TableColumn fx:id="laChloridesColumn" text="Chlorides"/>
+            <TableColumn fx:id="laAlcoholColumn" text="Alcohol"/>
+            <TableColumn fx:id="laQualityColumn" text="Quality"/>
+            <TableColumn fx:id="laColorColumn" text="Color"/>
+        </columns>
+    </TableView>
+
+    <!-- תצוגת טבלה ליינות באיכות נייטרלית -->
+    <Label text="Neutral Quality Wines" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+    <TableView fx:id="neutralQualityTable">
+        <columns>
+            <TableColumn fx:id="nqFixedAcidityColumn" text="Fixed Acidity"/>
+            <TableColumn fx:id="nqVolatileAcidityColumn" text="Volatile Acidity"/>
+            <TableColumn fx:id="nqCitricAcidColumn" text="Citric Acid"/>
+            <TableColumn fx:id="nqResidualSugarColumn" text="Residual Sugar"/>
+            <TableColumn fx:id="nqChloridesColumn" text="Chlorides"/>
+            <TableColumn fx:id="nqAlcoholColumn" text="Alcohol"/>
+            <TableColumn fx:id="nqQualityColumn" text="Quality"/>
+            <TableColumn fx:id="nqColorColumn" text="Color"/>
+        </columns>
+    </TableView>
+
+</VBox>
