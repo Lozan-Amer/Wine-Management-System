@@ -48,3 +48,5 @@ This project is for educational purposes only.
 
 ## Screenshot
 ![Main View](main_view.jpg.jpeg)
+![Java Code Preview](javacode.jpeg)
+
